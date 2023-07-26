@@ -1,0 +1,45 @@
+/* styles.scss */
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #424242;
+    color: #fff;
+    padding-top: 20px;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+  
+      li {
+        padding: 10px;
+        text-align: center;
+  
+        a {
+          color: #fff;
+          text-decoration: none;
+          display: block;
+  
+          &:hover {
+            background-color: #555;
+          }
+        }
+      }
+    }
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
