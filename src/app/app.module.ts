@@ -9,12 +9,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { DrawerComponent } from './drawer/drawer.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { BoddyComponent } from './boddy/boddy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    DrawerComponent
+    DrawerComponent,
+    BoddyComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    FlexLayoutModule
     
   ],
   providers: [],
