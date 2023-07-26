@@ -1,0 +1,2 @@
+# StorEase
+Controle de Estoque
