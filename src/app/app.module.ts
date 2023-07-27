@@ -11,13 +11,17 @@ import { DrawerComponent } from './drawer/drawer.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BoddyComponent } from './boddy/boddy.component';
+import { ItensEstoqueComponent } from './itens-estoque/itens-estoque.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DrawerComponent,
-    BoddyComponent
+    BoddyComponent,
+    ItensEstoqueComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,

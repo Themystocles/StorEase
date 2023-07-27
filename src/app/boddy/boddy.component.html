@@ -3,11 +3,16 @@
 <div fxLayout="row">
     <div class="retangulo1"> 
 
-        04 Itens cadastrados<br> <h5>19 itens em estoque </h5> 
+        04 Itens cadastrados<br> <h5>19 itens em estoque </h5> <br> <button routerLink="/ItensEstoque">aqui</button>
 
     </div>
 
-    <div class="retangulo2">1 Produto com estoque zerado</div>
-    <div class="retangulo3">2 Produtos com estoque minimo</div>
+    <div class="retangulo2">1 Produto com estoque zerado<br><br><br><a href="#"><h5>clique para visualizar</h5></a> </div>
+    <div class="retangulo3">2 Produtos com estoque minimo<br><br><br><a href="#"><h5>clique para visualizar</h5></a> </div>
   </div>
 
+
+  <br>
+  <div class="allin">
+  <router-outlet></router-outlet>
+</div>
