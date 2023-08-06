@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-itens-estoque',
   templateUrl: './itens-estoque.component.html',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class ItensEstoqueComponent {
 
-}
+
+
+  
+ 
+  }
+
+
+

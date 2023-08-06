@@ -13,6 +13,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BoddyComponent } from './boddy/boddy.component';
 import { ItensEstoqueComponent } from './itens-estoque/itens-estoque.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { DrawerService } from './drawer.service';
+import { ContatoComponent } from './contato/contato.component';
+import { ProdutoComponent } from './produto/produto.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { SobreComponent } from './sobre/sobre.component';
     DrawerComponent,
     BoddyComponent,
     ItensEstoqueComponent,
-    SobreComponent
+    SobreComponent,
+    ContatoComponent,
+    ProdutoComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,7 @@ import { SobreComponent } from './sobre/sobre.component';
     FlexLayoutModule
     
   ],
-  providers: [],
+  providers: [DrawerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
