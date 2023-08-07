@@ -1,0 +1,61 @@
+/* Estilos gerais da tabela */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos do cabeçalho */
+  .table thead {
+    background-color: #F08080;
+    color: white;
+  }
+  
+  /* Estilos das células do cabeçalho */
+  .table th {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  /* Estilos das células da tabela */
+  .table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Estilos das células de cada linha alternada */
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos das células quando passa o mouse */
+  .table tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Estilos para a primeira coluna (ID) */
+  .table td:first-child {
+    width: 10%;
+  }
+  
+  /* Estilos para a segunda coluna (Nome) */
+  .table td:nth-child(2) {
+    width: 40%;
+  }
+  
+  /* Estilos para a terceira coluna (Quantidade) */
+  .table td:nth-child(3) {
+    width: 20%;
+  }
+  
+  /* Estilos para a quarta coluna (Preço Unitário) */
+  .table td:nth-child(4) {
+    width: 30%;
+  }
+  

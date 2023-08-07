@@ -16,6 +16,9 @@ import { SobreComponent } from './sobre/sobre.component';
 import { DrawerService } from './drawer.service';
 import { ContatoComponent } from './contato/contato.component';
 import { ProdutoComponent } from './produto/produto.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { EstoqueZeroComponent } from './estoque-zero/estoque-zero.component';
+import { EstoqueMinimoComponent } from './estoque-minimo/estoque-minimo.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ProdutoComponent } from './produto/produto.component';
     ItensEstoqueComponent,
     SobreComponent,
     ContatoComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    CadastroComponent,
+    EstoqueZeroComponent,
+    EstoqueMinimoComponent
     
   ],
   imports: [
