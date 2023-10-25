@@ -19,6 +19,7 @@ import { ProdutoComponent } from './produto/produto.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { EstoqueZeroComponent } from './estoque-zero/estoque-zero.component';
 import { EstoqueMinimoComponent } from './estoque-minimo/estoque-minimo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { EstoqueMinimoComponent } from './estoque-minimo/estoque-minimo.componen
     EstoqueZeroComponent,
     EstoqueMinimoComponent
     
+    
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { EstoqueMinimoComponent } from './estoque-minimo/estoque-minimo.componen
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
     
   ],
   providers: [DrawerService],

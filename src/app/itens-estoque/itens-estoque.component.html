@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Controle de Estoque</title>
-   
 </head>
 <body>
     <h1>Lista de Itens de Estoque</h1>
@@ -18,12 +17,16 @@
             </tr>
         </thead>
         <tbody>
-            <td>1</td>
-            <td>Cilindro</td>
-            <td>27</td>
-            <td>400,00</td>
-            <td><mat-icon style="color: blue;">edit</mat-icon></td>
-            <td><mat-icon style="color: red;">delete_forever</mat-icon></td>
+            <!-- Utilize *ngFor para iterar sobre os itens e exibi-los na tabela -->
+            <tr *ngFor="let item of item">
+                <td>{{ item.id }}</td>
+                <td>{{ item.nome }}</td>
+                <td>{{ item.quantidade }}</td>
+                <td>{{ item.preco }}</td>
+                
+                <td><mat-icon style="color: blue;">edit</mat-icon></td>
+                <td><mat-icon style="color: red;">delete_forever</mat-icon></td>
+            </tr>
         </tbody>
     </table>
 </body>
