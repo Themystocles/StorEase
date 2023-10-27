@@ -5,4 +5,12 @@ export interface Item {
     preco: number;
     dataCadastro: Date;
   }
+
+  export interface ItemPost {
+    
+    nome: string;
+    quantidade: number;
+    preco: number;
+    
+  }
   

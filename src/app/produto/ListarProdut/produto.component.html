@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Controle de Estoque</title>
+   
+</head>
+<body>
+    <h1><b>Lista de Itens de Estoque</b></h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Utilize *ngFor para iterar sobre os itens e exibi-los na tabela -->
+            <tr *ngFor="let item of item" [class.highlight]="item.nome">
+                <td>{{ item.id }}</td>
+                <td>{{ item.nome }}</td>
+                <td>{{ item.quantidade }}</td>
+                <td>{{ item.preco }}</td>
+                <td><mat-icon style="color: blue;">edit</mat-icon></td>
+                <td><mat-icon style="color: red;">delete_forever</mat-icon></td>
+            </tr>
+        </tbody>
+    </table>
+    <button button mat-button color="primary" (click)="openCadastroProdutoDialog()">Criar Produto</button>
+</body>
+</html>

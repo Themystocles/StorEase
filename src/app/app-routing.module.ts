@@ -5,10 +5,11 @@ import { BoddyComponent } from './boddy/boddy.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { DrawerComponent } from './drawer/drawer.component';
 import { ContatoComponent } from './contato/contato.component';
-import { ProdutoComponent } from './produto/produto.component';
+import { ProdutoComponent } from './produto/ListarProdut/produto.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { EstoqueZeroComponent } from './estoque-zero/estoque-zero.component';
 import { EstoqueMinimoComponent } from './estoque-minimo/estoque-minimo.component';
+import { CriarProdutoComponent } from './produto/criar-produto/CriarProdutoComponent';
 
 const routes: Routes = [
 
@@ -25,6 +26,8 @@ const routes: Routes = [
 { path: 'Sobre', component: SobreComponent },
 { path: 'Contato', component: ContatoComponent},
 { path: 'Cadastro', component: CadastroComponent },
+{ path: 'CriarProduto', component: CriarProdutoComponent },
+
 
 
   

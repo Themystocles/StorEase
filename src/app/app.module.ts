@@ -15,11 +15,18 @@ import { ItensEstoqueComponent } from './itens-estoque/itens-estoque.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { DrawerService } from './drawer.service';
 import { ContatoComponent } from './contato/contato.component';
-import { ProdutoComponent } from './produto/produto.component';
+import { ProdutoComponent } from './produto/ListarProdut/produto.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { EstoqueZeroComponent } from './estoque-zero/estoque-zero.component';
 import { EstoqueMinimoComponent } from './estoque-minimo/estoque-minimo.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CriarProdutoComponent } from './produto/criar-produto/CriarProdutoComponent';
+import { AtualizarProdutoComponent } from './produto/atualizar-produto/atualizar-produto.component';
+import { DeletarProdutoComponent } from './produto/deletar-produto/deletar-produto.component';
+import {  MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +40,11 @@ import { HttpClientModule } from '@angular/common/http';
     ProdutoComponent,
     CadastroComponent,
     EstoqueZeroComponent,
-    EstoqueMinimoComponent
+    EstoqueMinimoComponent,
+    CriarProdutoComponent,
+    AtualizarProdutoComponent,
+    DeletarProdutoComponent,
+  
     
     
   ],
@@ -45,7 +56,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatSidenavModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    FormsModule,
+    MatButtonModule
     
   ],
   providers: [DrawerService],

@@ -1,0 +1,22 @@
+<div class="modal">
+    <h2 class="modal-title">Adicionar Item</h2>
+  
+    <div class="input-container">
+      <label for="NOME">Nome</label>
+      <input [(ngModel)]="NewItem.nome" name="NOME" id="NOME" placeholder="Insira o nome">
+    </div>
+  
+    <div class="input-container">
+      <label for="quantidade">Quantidade</label>
+      <input [(ngModel)]="NewItem.quantidade" id="quantidade" placeholder="Insira a quantidade">
+    </div>
+  
+    <div class="input-container">
+      <label for="preco">Preço</label>
+      <input [(ngModel)]="NewItem.preco" id="preco" placeholder="Insira o preço">
+    </div>
+  
+    <button (click)="fecharDialog()" class="close-button">Cancelar</button>
+    <button (click)="salvarItem()" class="save-button">Salvar</button>
+  </div>
+  

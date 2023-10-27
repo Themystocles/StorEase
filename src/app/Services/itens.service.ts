@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Item } from 'src/Models/ItemModel';
+import { Item, ItemPost } from 'src/Models/ItemModel';
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +14,9 @@ export class ItensService {
 
   GetIten(): Observable<Item[]>{
     return this.http.get<Item[]>(this.url);
+  }
+
+  PostItem(Item : ItemPost):Observable<ItemPost>{
+    return this.http.post<ItemPost>(this.url, Item);
   }
 }

@@ -1,0 +1,22 @@
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.highlight {
+    background-color: #ffff99; /* Cor de destaque para o produto cadastrado */
+}
+h1 {
+    text-align: center; /* Centralizar o título */
+}
