@@ -1,1 +1,21 @@
-<p>atualizar-produto works!</p>
+
+<div class="update-item-modal">
+  <h2 class="modal-title">Atualizar Item</h2>
+
+  <div class="input-container">
+    <label for="nome">Nome</label>
+    <input [(ngModel)]="Item.nome" name="nome" id="nome" placeholder="Insira o nome">
+  </div>
+
+  <div class="input-container">
+    <label for="quantidade">Quantidade</label>
+    <input [(ngModel)]="Item.quantidade" id="quantidade" placeholder="Insira a quantidade">
+  </div>
+
+  <div class="input-container">
+    <label for="preco">Preço</label>
+    <input [(ngModel)]="Item.preco" id="preco" placeholder="Insira o preço">
+  </div>
+
+  <button (click)="updateitem()">Atualizar</button>
+</div>

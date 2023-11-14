@@ -15,8 +15,24 @@ export class ItensService {
   GetIten(): Observable<Item[]>{
     return this.http.get<Item[]>(this.url);
   }
+  getItemById(id: string): Observable<Item>{
+    const urlID = `${this.url}/${id}`
+    return this.http.get<Item>(urlID)
+  }
 
   PostItem(Item : ItemPost):Observable<ItemPost>{
     return this.http.post<ItemPost>(this.url, Item);
   }
+  
+  delete(id: string): Observable<Item> {
+    const urlID = `${this.url}/${id}`
+    return this.http.delete<Item>(urlID)
+
+  }
+
+  PutItem(id: string, Item: ItemPost):Observable<ItemPost>{
+    const urlID = `${this.url}/${id}`
+    return this.http.put<ItemPost>(urlID, Item);
+  }
+
 }

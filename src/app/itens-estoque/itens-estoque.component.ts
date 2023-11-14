@@ -3,6 +3,7 @@ import { ItensService } from '../Services/itens.service';
 import { Item } from 'src/Models/ItemModel';
 
 
+
 @Component({
   selector: 'app-itens-estoque',
   templateUrl: './itens-estoque.component.html',
@@ -10,15 +11,16 @@ import { Item } from 'src/Models/ItemModel';
 })
 export class ItensEstoqueComponent implements OnInit{
 
-  item? : Item[] = []
+  items : Item[] = []
 
-  constructor(public Itemservice : ItensService) {
+  constructor(public Itemservice : ItensService,  ) {
     
   }
 
   ngOnInit(): void {
-    this.Itemservice.GetIten().subscribe(res => this.item = res)
+    this.Itemservice.GetIten().subscribe(res => this.items = res)
   }
+ 
 
   
   

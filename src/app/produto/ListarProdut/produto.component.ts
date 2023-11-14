@@ -29,6 +29,8 @@ export class ProdutoComponent implements OnInit {
         // Você pode atualizar a lista de produtos ou realizar outras ações aqui.
       }
     });
+   
+
   }
 
   

@@ -1,0 +1,25 @@
+<div class="filtro-container">
+    <label for="filtroNome">Filtrar por Nome:</label>
+    <input type="text" id="filtroNome" [(ngModel)]="termoPesquisa" (input)="aplicarFiltro()" />
+  
+    <label for="filtroOperacao">Filtrar por Operação:</label>
+    <select id="filtroOperacao" [(ngModel)]="operacaoFiltro" (change)="aplicarFiltro()">
+      <option value="">Todas as Operações</option>
+      <option value="ADICIONADO">Adicionado</option>
+      <option value="ALTERADO">Alterado</option>
+      <option value="DELETADO">Deletado</option>
+      
+    </select>
+  </div>
+  
+  <ul class="historico-list">
+    <li *ngFor="let historico of historicoFiltrado" class="historico-item"> 
+      <div class="historico-details">
+        <span class="historico-property">ID:</span> {{historico.id}}
+        <span class="historico-property">Nome:</span> {{historico.item}}
+        <span class="historico-property">Operação:</span> {{historico.operacao}}
+        <span class="historico-property">Data e Hora:</span> {{historico.dataHoraRegistro}}
+      </div>
+    </li>
+  </ul>
+  

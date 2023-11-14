@@ -10,6 +10,9 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { EstoqueZeroComponent } from './estoque-zero/estoque-zero.component';
 import { EstoqueMinimoComponent } from './estoque-minimo/estoque-minimo.component';
 import { CriarProdutoComponent } from './produto/criar-produto/CriarProdutoComponent';
+import { HistoricoComponent } from './historico/historico.component';
+import { DeletarProdutoComponent } from './produto/deletar-produto/deletar-produto.component';
+import { AtualizarProdutoComponent } from './produto/atualizar-produto/atualizar-produto.component';
 
 const routes: Routes = [
 
@@ -27,6 +30,11 @@ const routes: Routes = [
 { path: 'Contato', component: ContatoComponent},
 { path: 'Cadastro', component: CadastroComponent },
 { path: 'CriarProduto', component: CriarProdutoComponent },
+{ path: 'historico', component: HistoricoComponent },
+{ path: 'Produto/delete/:id', component: DeletarProdutoComponent },
+{ path: 'Produto/Alterar/:id', component: AtualizarProdutoComponent  },
+
+
 
 
 

@@ -24,11 +24,13 @@
                 <td>{{ item.nome }}</td>
                 <td>{{ item.quantidade }}</td>
                 <td>{{ item.preco }}</td>
-                <td><mat-icon style="color: blue;">edit</mat-icon></td>
-                <td><mat-icon style="color: red;">delete_forever</mat-icon></td>
+                <td><mat-icon style="color: blue;"routerLink="/Produto/Alterar/{{item.id}}">edit</mat-icon></td>
+                <td><mat-icon style="color: red;" routerLink="/Produto/delete/{{item.id}}">delete_forever</mat-icon></td>
             </tr>
         </tbody>
     </table>
     <button button mat-button color="primary" (click)="openCadastroProdutoDialog()">Criar Produto</button>
+    
+
 </body>
 </html>

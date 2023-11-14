@@ -1,0 +1,67 @@
+.historico-list {
+    list-style: none;
+    padding: 0;
+}
+
+.historico-item {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.historico-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.historico-property {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.filtro-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  
+    input, select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+  
+    /* Adicione estilos adicionais conforme necessário */
+  }
+  
+  /* Adicione estilos adicionais para a lista de histórico se desejar */
+  .historico-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .historico-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .historico-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .historico-property {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  

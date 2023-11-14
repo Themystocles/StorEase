@@ -26,6 +26,9 @@ import { DeletarProdutoComponent } from './produto/deletar-produto/deletar-produ
 import {  MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import { HistoricoComponent } from './historico/historico.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 
 @NgModule({
@@ -44,6 +47,7 @@ import {MatButtonModule} from '@angular/material/button';
     CriarProdutoComponent,
     AtualizarProdutoComponent,
     DeletarProdutoComponent,
+    HistoricoComponent,
   
     
     
@@ -59,7 +63,8 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     MatDialogModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
     
   ],
   providers: [DrawerService],
