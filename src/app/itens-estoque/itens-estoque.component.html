@@ -12,6 +12,9 @@
                 <th>Nome</th>
                 <th>Quantidade</th>
                 <th>Preço Unitário</th>
+                <th>ADD</th>
+                <th>Tirar</th>
+
                 
             </tr>
         </thead>
@@ -22,7 +25,8 @@
                 <td>{{ item.nome }}</td>
                 <td>{{ item.quantidade }}</td>
                 <td>{{ item.preco }}</td>
-                
+                <td routerLink="/Produto/Adicionar/{{item.id}}"><mat-icon>add</mat-icon></td>
+                <td routerLink="/Produto/vender/{{item.id}}"><mat-icon>remove</mat-icon></td>
                 
             </tr>
         </tbody>

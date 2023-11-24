@@ -10,6 +10,7 @@
       <option value="DELETADO">Deletado</option>
       
     </select>
+    <button class="historico-button" routerLink="/historico/compra/venda" >Ver Histórico de Compra e Venda</button>
   </div>
   
   <ul class="historico-list">
@@ -19,6 +20,7 @@
         <span class="historico-property">Nome:</span> {{historico.item}}
         <span class="historico-property">Operação:</span> {{historico.operacao}}
         <span class="historico-property">Data e Hora:</span> {{historico.dataHoraRegistro}}
+        
       </div>
     </li>
   </ul>

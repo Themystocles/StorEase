@@ -1,0 +1,16 @@
+<div *ngIf="itemselect" class="item-details">
+  <p>Item ID: {{ itemselect.id }}</p>
+  <h2>Você selecionou o item {{ itemselect.nome }} </h2>
+  <h3>Quantidade {{ itemselect.quantidade }}</h3>
+  <input type="number" [(ngModel)]="NovaQuantidade" id="quantidade" placeholder="Insira a quantidade">
+
+  <div *ngIf="operacao" class="operation-details">
+    <label for="Cliente">Fornecedor</label>
+    <input [(ngModel)]="operacao.cliente" id="Cliente" placeholder="Insira O Fornecedor">
+    <br>
+    <label for="cpf">CPF ou CNPJ FORNECEDOR</label>
+    <input [(ngModel)]="operacao.cpf" id="cpf" placeholder="Insira o CPF">
+    <br>
+    <button (click)="AdicionarQtd()">Adicionar</button>
+  </div>
+</div>

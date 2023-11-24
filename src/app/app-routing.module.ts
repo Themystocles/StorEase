@@ -13,6 +13,9 @@ import { CriarProdutoComponent } from './produto/criar-produto/CriarProdutoCompo
 import { HistoricoComponent } from './historico/historico.component';
 import { DeletarProdutoComponent } from './produto/deletar-produto/deletar-produto.component';
 import { AtualizarProdutoComponent } from './produto/atualizar-produto/atualizar-produto.component';
+import { AdicionarComponent } from './adicionar/adicionar.component';
+import { VendidoComponent } from './vendido/vendido.component';
+import { HistoricoCompraeVendaComponent } from './historico-comprae-venda/historico-comprae-venda.component';
 
 const routes: Routes = [
 
@@ -33,9 +36,9 @@ const routes: Routes = [
 { path: 'historico', component: HistoricoComponent },
 { path: 'Produto/delete/:id', component: DeletarProdutoComponent },
 { path: 'Produto/Alterar/:id', component: AtualizarProdutoComponent  },
-
-
-
+{ path: 'Produto/Adicionar/:id', component: AdicionarComponent  },
+{ path: 'Produto/vender/:id', component: VendidoComponent  },
+{ path: 'historico/compra/venda', component: HistoricoCompraeVendaComponent  },
 
 
   

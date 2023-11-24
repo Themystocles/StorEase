@@ -58,4 +58,22 @@
   .table td:nth-child(4) {
     width: 30%;
   }
-  
+  /* seu-componente.component.scss */
+
+.circle-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: green;
+}
+
+.subtract-button {
+  background-color: red;
+}

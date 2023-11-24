@@ -1,0 +1,31 @@
+<div class="filtro-container">
+    <div class="filtro">
+      <label>Fornecedor:</label>
+      <input [(ngModel)]="filtroFornecedor" (input)="aplicarFiltro()" />
+    </div>
+    <div class="filtro">
+      <label>Item:</label>
+      <input [(ngModel)]="filtroItem" (input)="aplicarFiltro()" />
+    </div>
+    <div class="filtro">
+      <label>Compra ou Venda:</label>
+      <select [(ngModel)]="filtroCompraVenda" (change)="aplicarFiltro()">
+        <option value="">Todos</option>
+        <option value="Compra">Compra</option>
+        <option value="Venda">Venda</option>
+      </select>
+    </div>
+  </div>
+  
+  <ul class="historico-list">
+    <li *ngFor="let hist of historicoFiltrado" [ngClass]="{'compra': hist.operacao === 'Compra', 'venda': hist.operacao === 'Venda'}">
+      <span class="id">Id {{hist.id}}</span>
+      <span class="cliente">Fornecedor / Cliente {{hist.cliente}}</span>
+      <span class="cpf-cnpj">Cpf / Cnpj {{hist.cpf}}</span>
+      <span class="quantidade">Quantidade {{hist.quantidade}}</span>
+      <span class="data-hora">Data e Hora {{hist.data_hora}}</span>
+      <span class="item">Item {{hist.item}}</span>
+      <span class="operacao" [ngClass]="{'compra-text': hist.operacao === 'Compra', 'venda-text': hist.operacao === 'Venda'}">Operação {{hist.operacao}}</span>
+    </li>
+  </ul>
+  

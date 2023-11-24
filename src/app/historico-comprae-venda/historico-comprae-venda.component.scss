@@ -1,0 +1,59 @@
+.filtro-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  
+    .filtro {
+      flex: 1;
+      margin-right: 10px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      input, select {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  
+  .historico-list {
+    list-style: none;
+    padding: 0;
+  
+    li {
+      border: 1px solid #ccc;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+  
+      &.compra {
+        background-color: #ffe6e6; /* Vermelho claro para compras */
+      }
+  
+      &.venda {
+        background-color: #e6ffe6; /* Verde claro para vendas */
+      }
+  
+      span {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      .operacao {
+        font-weight: bold;
+      }
+  
+      &.compra .operacao {
+        color: red; /* Cor vermelha para 'Compra' */
+      }
+  
+      &.venda .operacao {
+        color: green; /* Cor verde para 'Venda' */
+      }
+    }
+  }
+  

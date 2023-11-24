@@ -9,7 +9,7 @@ import { Item, ItemPost } from 'src/Models/ItemModel';
 })
 export class historicoServices {
 
-  url = "http://localhost:5284/api/historico"
+  url = "http://localhost:5284/api/itens/historico"
 
   constructor(private http: HttpClient ) { }
 

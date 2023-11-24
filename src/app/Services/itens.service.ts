@@ -24,6 +24,8 @@ export class ItensService {
     return this.http.post<ItemPost>(this.url, Item);
   }
   
+
+  
   delete(id: string): Observable<Item> {
     const urlID = `${this.url}/${id}`
     return this.http.delete<Item>(urlID)

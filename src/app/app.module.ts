@@ -28,6 +28,9 @@ import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { HistoricoComponent } from './historico/historico.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { AdicionarComponent } from './adicionar/adicionar.component';
+import { VendidoComponent } from './vendido/vendido.component';
+import { HistoricoCompraeVendaComponent } from './historico-comprae-venda/historico-comprae-venda.component';
 
 
 
@@ -48,6 +51,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     AtualizarProdutoComponent,
     DeletarProdutoComponent,
     HistoricoComponent,
+    AdicionarComponent,
+    VendidoComponent,
+    HistoricoCompraeVendaComponent,
+    
   
     
     

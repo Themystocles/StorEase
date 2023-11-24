@@ -1,6 +1,6 @@
 export interface historico {
     
-    id: number;
+  id: number;
   item: string;
   operacao: string;
   dataHoraRegistro: string;

@@ -13,6 +13,8 @@ export class ItensEstoqueComponent implements OnInit{
 
   items : Item[] = []
 
+  
+
   constructor(public Itemservice : ItensService,  ) {
     
   }
